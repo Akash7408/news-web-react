@@ -20,7 +20,9 @@ function App() {
     <NavBar/>
     <Routes>
           <Route path="/"  element={<News pageSize={PageSize} country="in" category="general"/>} />
-          <Route path="/about"  element={<About/>} />
+          <Route path="/profile"  element={<About/>} />
+          {/* <Route exact path="/about" element={<News key="about"  pageSize={PageSize} country="in" category="about"/>} />
+         */}
 
           {/* catagory */}
           <Route exact path="/general" element={<News key="general"  pageSize={PageSize} country="in" category="general"/>} />
